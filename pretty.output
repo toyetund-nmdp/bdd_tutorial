@@ -1,0 +1,47 @@
+Feature: Cucumber Basket # tests/features/definitions/cucumber-basket.feature:1
+
+  @cucumber-basket
+  Scenario Outline: Add cucumbers -- @1.1 Cucumber Counts  # tests/features/definitions/cucumber-basket.feature:11
+    Given the basket has “0” cucumbers                     # tests/steps/cucumber_basket.py:3
+      Traceback (most recent call last):
+        File "/Users/toyetund/anaconda3/lib/python3.7/site-packages/behave/model.py", line 1329, in run
+          match.run(runner.context)
+        File "/Users/toyetund/anaconda3/lib/python3.7/site-packages/behave/matchers.py", line 98, in run
+          self.func(context, *args, **kwargs)
+        File "tests/steps/cucumber_basket.py", line 5, in step_impl
+          raise NotImplementedError(u'STEP: Given the basket has “5” cucumbers')
+      NotImplementedError: STEP: Given the basket has “5” cucumbers
+
+    When "1" cucumbers are added to the basket             # None
+    Then the basket contains "1" cucumbers                 # None
+
+  @cucumber-basket
+  Scenario Outline: Add cucumbers -- @1.2 Cucumber Counts  # tests/features/definitions/cucumber-basket.feature:12
+    Given the basket has “1” cucumbers                     # tests/steps/cucumber_basket.py:3
+      Traceback (most recent call last):
+        File "/Users/toyetund/anaconda3/lib/python3.7/site-packages/behave/model.py", line 1329, in run
+          match.run(runner.context)
+        File "/Users/toyetund/anaconda3/lib/python3.7/site-packages/behave/matchers.py", line 98, in run
+          self.func(context, *args, **kwargs)
+        File "tests/steps/cucumber_basket.py", line 5, in step_impl
+          raise NotImplementedError(u'STEP: Given the basket has “5” cucumbers')
+      NotImplementedError: STEP: Given the basket has “5” cucumbers
+
+    When "2" cucumbers are added to the basket             # None
+    Then the basket contains "3" cucumbers                 # None
+
+  @cucumber-basket
+  Scenario Outline: Add cucumbers -- @1.3 Cucumber Counts  # tests/features/definitions/cucumber-basket.feature:13
+    Given the basket has “5” cucumbers                     # tests/steps/cucumber_basket.py:3
+      Traceback (most recent call last):
+        File "/Users/toyetund/anaconda3/lib/python3.7/site-packages/behave/model.py", line 1329, in run
+          match.run(runner.context)
+        File "/Users/toyetund/anaconda3/lib/python3.7/site-packages/behave/matchers.py", line 98, in run
+          self.func(context, *args, **kwargs)
+        File "tests/steps/cucumber_basket.py", line 5, in step_impl
+          raise NotImplementedError(u'STEP: Given the basket has “5” cucumbers')
+      NotImplementedError: STEP: Given the basket has “5” cucumbers
+
+    When "4" cucumbers are added to the basket             # None
+    Then the basket contains "9" cucumbers                 # None
+
